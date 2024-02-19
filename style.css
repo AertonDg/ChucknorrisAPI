@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+img{
+    width: 300px;
+
+}
+img:hover{
+    animation-duration: 0.3s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-5);
+        transform: translateY(-5);
+    }
+    25%{
+        transform: translateX(10px);
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateX(-5px);    
+    }
+    75%{
+        transform: translateX(10px);
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateX(-5px);
+        transform: translateY(5px);
+    }
+}
+#joker{
+    text-align: center;
+    width: 80%;
+    font-size: 1.3rem;
+}
+section{
+    background-color: rgb(255, 144, 8);
+    border-radius: 20px;
+    border-color: bisque;
+    width: 250px;
+    height: 50 px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+footer{
+    text-align: center;
+}
